@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Test de formulario</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Bible</legend>
+
+            <input type="radio" name="version" id="iancien" required  autocomplete="version">
+            <label for="iversion">Ancien Testatement</label>
+
+            <input type="radio" name="version" id="inouveau" required checked>
+            <label for="inouveau">Nouveau Testatement</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Livres à Lire</legend>
+            <input type="checkbox" name="genese" id="igenese">
+            <label for="igenese">Genese</label><br>
+
+            <input type="checkbox" name="Matthieu" id="imatthieu" checked>
+            <label for="imatthieu">Matthieu</label><br>
+
+            <input type="checkbox" name="ephesien" id="iephesien">
+            <label for="iephesien">Ephesien</label>
+
+            input:
+
+        </fieldset>
+
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+    
+</body>
+</html>

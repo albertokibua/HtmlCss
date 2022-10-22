@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+
+        <label for="ireligion">Religion</label><br>
+        <select name="religion" id="ireligion">
+            <option value="">------Choisir sa Religion------</option>
+            <optgroup label="Réligions d'état">
+             <option value="CAT">Catholique</option>
+            <option value="PROS">Protestante</option>
+            </optgroup>
+            
+            <optgroup label="Réligions populistes">
+            <option value="ISL">Islamique</option>
+            <option value="ORT">Orthodoxe</option>
+            <option value="CHAR">Charismatique</option>
+            </optgroup>
+            <optgroup label="Libres">
+            <option value="OUT">Outros</option>
+            </optgroup>
+        </select>
+        
+        <label for="istatut">Croyance</label>
+        <input type="text" name="statut" id="istatut" list="lststatut">
+        <datalist id="lststatut">
+            <option>Chretien(Ene)</option>
+            <option>Musulman(e)</option>
+            <option>Libre</option>
+            <option>Sans Religion</option>
+            <option>Athée</option>
+        </datalist><br>
+         
+        <label for="imsg">Expliquer votre choix</label><br>
+        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>

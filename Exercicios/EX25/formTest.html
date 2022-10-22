@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulario</title>
+</head>
+<body>
+    <form action="pays.php" method="POST" autocomplete="on">
+
+        <h1>Liste de pays du monde</h1>
+    <p>
+        <label for="ipays">Pays:  </label>
+      <input type="text" name="pays" id="ipays" required   minlength="6" autocomplete="pays" placeholder="Le nom doit contenir lettres" size="12"> 
+    </p>
+    <p>
+        <label for="icapital">Capital:  </label>
+        <input type="text" name="capital" id="icapital" required maxlength="12" autocomplete="capital" placeholder="Doit contenir que jusqu'à 12 lettres"  size="12">
+    </p>
+
+    <p>
+        <label for="inombrehab">Nombre de habitant:  </label>
+        <input type="number" name="nombrehab" id="inombrehab" required >
+
+    </p>
+
+    <p> 
+        <input type="button" value="Submit">
+        <input type="reset" value="Limpar">
+    </p>
+    </form>
+</body>
+</html>

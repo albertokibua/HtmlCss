@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+       <p> 
+        <label for="inome">Nome:</label>
+        <input type="text" name="nome" id="inome" required autocomplete="nome" 
+        oninput="iprimeiro.innerHTML=inome.value" + isegundo.innerHTML="isegundo.value">
+        
+    
+       </p>
+
+       <p>
+        <label for="ilast">Ultimo nome:</label>
+        <input type="text" name="last" id="ilast" required autocomplete="last" 
+        oninput="isegundo.innerHTML=isegundo.value">
+       </p>
+
+
+       <p>
+        <label for="primeiro">Nome Competo :</label>
+        <output name="primeiro" id="iprimeiro" > Mr </output>
+        <output name="segundo" id="isegundo"></output>
+       </p>
+
+       <p>
+        <input type="submit" value="Enviar">
+        <input type= "reset" value="Limpar">
+       </p>
+
+    </form>
+
+    <script>
+        function nomecompleto(){
+            let premier = icompleto.innerHTML=inome.value
+            let seconde = icompleto.innerHTML=last.value
+            let final = 
+            icompleto.innerHTML = final
+        }
+    </script>
+</body>
+</h

@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@media screen and (min-width:768px){
+    span#burguer{ /* Que le burguer disparait quand on passeà un ecran plus quand que la taille du téléphone*/
+        display: none;
+    }
+    menu{
+        display: block;/*Bien que le burguer dispqrqit mais que le menu apparaisse*/
+    }
+    
+    menu >ul >li{ /* Pour que les options du menu apparaissent l'un à coté de l'autre*/
+        display: inline-block;
+    }
+
+    main{
+        width: 768px;
+    }
+}
